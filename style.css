@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Ephesis&family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
 
 body {
   font-size: 1.4rem;
-  font-family: arial;
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 
@@ -25,5 +27,80 @@ body {
 }
 
 h1 {
-  font-size: 16rem;
+  font-size: 7rem;
+}
+
+/* Style menu desktop */
+.navbar-desktop {
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+}
+
+/* Style des liens */
+.navbar-desktop a {
+  padding: 3rem; /* Espace entre chaque lien */
+}
+
+/* Style menu mobile */
+.navbar-mobile {
+  display: none;
+  position: fixed;
+  top: 9px;
+  right: 15px;
+  font-size: 3rem;
+  color: red;
+}
+
+.navbar-mobile .modal {
+  background-color: #f92995;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar-mobile .navbar-mobile-list {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #1e2337;
+  padding: 2rem;
+}
+
+.navbar-mobile i {
+  position: fixed;
+  z-index: 9999;
+  top: 9px;
+  right: 15px;
+  font-size: 3rem;
+  color: white;
+}
+
+.modal {
+  background-color: #f92995;
+  height: 100vh;
+  position: fixed;
+  top: -1000vh;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+@media screen and (max-width : 700px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
 }
