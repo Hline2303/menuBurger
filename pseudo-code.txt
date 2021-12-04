@@ -1,0 +1,7 @@
+Au clic (event) sur le menu (élément)
+la div modal (élément) s'affichera progressivement (action),
+l'icône (élément) se transforme en croix (action)
+
+Au clic suivant (event) sur le menu (élément)
+la div modal (élément) remonte (action),
+l'icône (élément) reprend sa forme d'origine (action)
